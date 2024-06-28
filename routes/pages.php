@@ -17,12 +17,26 @@ $obRouter->get('/champions',[
   }
 ]);
 
-//Rota Login
-// $obRouter->get('/login',[
-//   function(){
-//     return new Response(200,Pages\Login::getLogin());
-//   }
-// ]);
+//Rota Europa league
+$obRouter->get('/europa',[
+  function(){
+    return new Response(200,Pages\Europa::getEuropa());
+  }
+]);
+
+//Rota Noticias
+$obRouter->get('/noticias',[
+  function(){
+    return new Response(200,Pages\Noticias::getNoticias());
+  }
+]);
+
+//Rota Noticias->Noticia
+$obRouter->get('/noticias/01',[
+  function(){
+    return new Response(200,Pages\Notice::getNotice());
+  }
+]);
 
 //Rota Usuario
 $obRouter->get('/usuario',[

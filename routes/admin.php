@@ -1,47 +1,19 @@
 <?php 
 
-use \App\Http\Response;
-use \App\Controller\Admin;
+//INCLUI AS ROTAS DE HOME
+include __DIR__.'/admin/home.php';
 
-//Rota ADMIN
-$obRouter->get('/admin',[
-  'middlewares' => [
-    'required-admin-login'
-  ],
-  function(){
-    return new Response(200,'Admin :)');
-  }
-]);
+//INCLUI AS ROTAS DE LOGIN
+include __DIR__.'/admin/login.php';
 
-//Rota Login
-$obRouter->get('/admin/login',[
-  'middlewares' => [
-    'required-admin-logout'
-  ],
-  function($request){
-    return new Response(200,Admin\Login::getLogin($request));
-  }
-]);
+//INCLUI AS ROTAS DE LOGIN
+include __DIR__.'/admin/register.php';
 
+//INCLUI AS ROTAS DE COMENTARIOS
+include __DIR__.'/admin/comentarios.php';
 
-//Rota Login (POST)
-$obRouter->post('/admin/login',[
-  'middlewares' => [
-    'required-admin-logout'
-  ],
-  function($request){
-    return new Response(200,Admin\Login::setLogin($request));
-  }
-]);
+//INCLUI AS ROTAS DE COMENTARIOS
+include __DIR__.'/admin/usuarios.php';
 
-//Rota de logout
-$obRouter->get('/admin/logout',[
-   'middlewares' => [
-    'required-admin-login'
-  ],
-  function($request){
-    return new Response(200,Admin\Login::setLogout($request));
-  }
-]);
 
 ?>

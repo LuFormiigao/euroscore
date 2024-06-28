@@ -4,765 +4,796 @@
   <h2 class="titulo-secundario">Champions League</h2>
   <div class="champions-controls">
     <nav class="champions-content slide-config">
-      <button class="champions-data-jogos" data-date="15/03">
-        <h3>QUA 15/03</h3>
+      <button class="champions-data-jogos" data-date="13">
+        <h3>Final</h3>
       </button>
-      <button class="champions-data-jogos" data-date="09/04">
-        <h3>TER 09/04</h3>
+      <button class="champions-data-jogos" data-date="12">
+        <h3>Semi final - Volta</h3>
       </button>
-      <button class="champions-data-jogos" data-date="10/04">
-        <h3>QUA 10/04</h3>
+      <button class="champions-data-jogos" data-date="11">
+        <h3>Semi final - Ida</h3>
       </button>
-      <button class="champions-data-jogos" data-date="16/04">
-        <h3>TER 16/04</h3>
+      <button class="champions-data-jogos" data-date="10">
+        <h3>4ª Final - Volta</h3>
       </button>
-      <button class="champions-data-jogos active" data-date="17/04">
-        <h3>QUA 17/04</h3>
+      <button class="champions-data-jogos" data-date="9">
+        <h3>4ª Final - Ida</h3>
       </button>
-      <button class="champions-data-jogos" data-date="07/05">
-        <h3>ter 07/05</h3>
+      <button class="champions-data-jogos" data-date="8">
+        <h3>8ª Final - Volta</h3>
       </button>
-      <button class="champions-data-jogos" data-date="08/05">
-        <h3>QUA 08/05</h3>
+      <button class="champions-data-jogos" data-date="7">
+        <h3>8ª Final - Ida</h3>
       </button>
-      <button class="champions-data-jogos" data-date="01/06">
-        <h3>SÁB 01/06</h3>
+      <button class="champions-data-jogos" data-date="6">
+        <h3>6ª Rodada</h3>
+      </button>
+      <button class="champions-data-jogos" data-date="5">
+        <h3>5ª Rodada</h3>
+      </button>
+      <button class="champions-data-jogos" data-date="4">
+        <h3>4ª Rodada</h3>
+      </button>
+      <button class="champions-data-jogos" data-date="3">
+        <h3>3ª Rodada</h3>
+      </button>
+      <button class="champions-data-jogos" data-date="2">
+        <h3>2ª Rodada</h3>
+      </button>
+      <button class="champions-data-jogos" data-date="1">
+        <h3>1ª Rodada</h3>
       </button>
     </nav>
-    <button class="btn-left" onclick="direcao()">&#10094</button>
-    <button class="btn-right" onclick="direcao()">&#10095</button>
+    <button class="btn-left" id="prevBtn">&#10094</button>
+    <button class="btn-right" id="nextBtn">&#10095</button>
   </div>
-</section>
 
-<section class="secao-data-jogos champions-page container">
-  <div class="partidas">
-    <div class="partida-content transition" data-date="17/04">
-      <div class="liga">UEFA Europa League</div>
-      <div class="partida-data">Quartas-Final 17/04 ° 16:00</div>
-      <div class="partida-casa">
-        <div class="imagem-xd"></div>
-        <h2>Atalanta</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <div class="partida-visitante">
-        <div class="imagem-xd"></div>
-        <h2>Bayern Lev</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <a href="#" class="partida-ver">Ver Partida</a>
-      <div class="style-line"></div>
-      <div class="partida-status">Fim</div>
-    </div>
-    <div class="partida-content transition" data-date="17/04">
-      <div class="liga">UEFA Europa League</div>
-      <div class="partida-data">Quartas-Final 17/04 ° 16:00</div>
-      <div class="partida-casa">
-        <div class="imagem-xd"></div>
-        <h2>Atalanta</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <div class="partida-visitante">
-        <div class="imagem-xd"></div>
-        <h2>Bayern Lev</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <a href="#" class="partida-ver">Ver Partida</a>
-      <div class="style-line"></div>
-      <div class="partida-status">Fim</div>
-    </div>
-    <!-- Adicione mais partidas aqui, com data correspondente -->
-    <div class="partida-content transition" data-date="09/04">
-      <div class="liga">UEFA Europa League</div>
-      <div class="partida-data">Quartas-Final 17/04 ° 16:00</div>
-      <div class="partida-casa">
-        <div class="imagem-xd"></div>
-        <h2>Atalanta</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <div class="partida-visitante">
-        <div class="imagem-xd"></div>
-        <h2>Bayern Lev</h2>
-        <div class="placar-tc">1</div>
-      </div>
-      <a href="#" class="partida-ver">Ver Partida</a>
-      <div class="style-line"></div>
-      <div class="partida-status">Fim</div>
-    </div>
-  </div>
-</section>
-
-<section class="partida-datas container">
-  <h2 class="titulo-secundario">Champions Noticias</h2>
-  <div class="champions-controls">
-    <nav class="champions-content noticia-champions  slide-config" id="slide">
-      <div class="noticia-secundary">
-        <div class="noticia-texto">
-          <span>Ultimas Noticias</span>
-          <h2>Real Madrid é campeão</h2>
-          <p class="noticia-horario">6 Horas atrás</p>
+  <section class="secao-data-jogos champions-page container">
+    <div class="partidas">
+      <div class="partida-content transition" data-date="13">
+        <div class="liga">UEFA Champions League</div>
+        <div class="partida-data">Final ° 16:00</div>
+        <div class="partida-casa">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/Real_Madrid_CF.svg"></div>
+          <h2>Real Madrid</h2>
+          <div class="placar-tc">2</div>
         </div>
-        <img src="{{URL}}/resources/img/realmadrid.png" alt="">
-      </div>
-      <div class="noticia-secundary">
-        <div class="noticia-texto">
-          <span>Ultimas Noticias</span>
-          <h2>Real Madrid é campeão</h2>
-          <p class="noticia-horario">6 Horas atrás</p>
+        <div class="partida-visitante">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/borussia-dortmund.svg"></div>
+          <h2>B. Dortmund</h2>
+          <div class="placar-tc">0</div>
         </div>
-        <img src="{{URL}}/resources/img/realmadrid.png" alt="">
+        <div class="style-line"></div>
+        <div class="partida-status">Fim</div>
       </div>
-      <div class="noticia-secundary">
-        <div class="noticia-texto">
-          <span>Ultimas Noticias</span>
-          <h2>Real Madrid é campeão</h2>
-          <p class="noticia-horario">6 Horas atrás</p>
+
+      <div class="partida-content transition" data-date="12">
+        <div class="liga">UEFA Champions League</div>
+        <div class="partida-data">Semi-Final ° 16:00</div>
+        <div class="partida-casa">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/Real_Madrid_CF.svg"></div>
+          <h2>Real Madrid</h2>
+          <div class="placar-tc">2</div>
         </div>
-        <img src="{{URL}}/resources/img/realmadrid.png" alt="">
-      </div>
-      <div class="noticia-secundary">
-        <div class="noticia-texto">
-          <span>Ultimas Noticias</span>
-          <h2>Real Madrid é campeão</h2>
-          <p class="noticia-horario">6 Horas atrás</p>
+        <div class="partida-visitante">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/bayern-munich.svg"></div>
+          <h2>Bayer de Munique</h2>
+          <div class="placar-tc">1</div>
         </div>
-        <img src="{{URL}}/resources/img/realmadrid.png" alt="">
+        <div class="style-line"></div>
+        <div class="partida-status">Fim</div>
       </div>
-      <div class="noticia-secundary">
-        <div class="noticia-texto">
-          <span>Ultimas Noticias</span>
-          <h2>Real Madrid é campeão</h2>
-          <p class="noticia-horario">6 Horas atrás</p>
+
+      <div class="partida-content transition" data-date="12">
+        <div class="liga">UEFA Champions League</div>
+        <div class="partida-data">Semi-Final ° 16:00</div>
+        <div class="partida-casa">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/psg-paris-saint-germain.svg"></div>
+          <h2>PSG</h2>
+          <div class="placar-tc">0</div>
         </div>
-        <img src="{{URL}}/resources/img/realmadrid.png" alt="">
+        <div class="partida-visitante">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/borussia-dortmund.svg"></div>
+          <h2>B. Dortmund</h2>
+          <div class="placar-tc">1</div>
+        </div>
+        <div class="style-line"></div>
+        <div class="partida-status">Fim</div>
       </div>
-    </nav>
-    <button class="btn-left" onclick="direcao(1)">&#10094</button>
-    <button class="btn-right" onclick="direcao(2)">&#10095</button>
-  </div>
-</section>
 
-<section class="container">
-  <h2 class="titulo-secundario">Estatísticas</h2>
-  <div class="estatisticas-content">
-    <div class="estatistica-box">
-      <h2>Gols</h2>
-      <ul class="top-scorers">
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Mbappé</span>
-                <span class="team">Paris</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Kane</span>
-                <span class="team">Bayern</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Haaland</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Griezmann</span>
-                <span class="team">Atlético de Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Álvarez</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Rodrygo</span>
-                <span class="team">Real Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-      </ul>
-    </div>
-    <!-- Segunda box -->
-    <div class="estatistica-box a">
-      <h2>Assistencia</h2>
-      <ul class="top-scorers">
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Mbappé</span>
-                <span class="team">Paris</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Kane</span>
-                <span class="team">Bayern</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Haaland</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Griezmann</span>
-                <span class="team">Atlético de Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Álvarez</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Rodrygo</span>
-                <span class="team">Real Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-      </ul>
-    </div>
-    <!-- Terceira box -->
-    <div class="estatistica-box a">
-      <h2>Tent. No alvo</h2>
-      <ul class="top-scorers">
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Mbappé</span>
-                <span class="team">Paris</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Kane</span>
-                <span class="team">Bayern</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Haaland</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Griezmann</span>
-                <span class="team">Atlético de Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Álvarez</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Rodrygo</span>
-                <span class="team">Real Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-      </ul>
-    </div>
-    <!-- Quarta box -->
-    <div class="estatistica-box a">
-      <h2>Precisão de Passe</h2>
-      <ul class="top-scorers">
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Mbappé</span>
-                <span class="team">Paris</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Kane</span>
-                <span class="team">Bayern</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Haaland</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Griezmann</span>
-                <span class="team">Atlético de Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Álvarez</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Rodrygo</span>
-                <span class="team">Real Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-      </ul>
-    </div>
-    <!-- Quinta box -->
-    <div class="estatistica-box a">
-      <h2>Defesas</h2>
-      <ul class="top-scorers">
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Mbappé</span>
-                <span class="team">Paris</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">1</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Kane</span>
-                <span class="team">Bayern</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">8</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Haaland</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">3</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Griezmann</span>
-                <span class="team">Atlético de Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">6</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Álvarez</span>
-                <span class="team">Man City</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-        <li class="top-scorer">
-          <div class="left">
-            <div class="position">5</div>
-            <div class="player-info">
-              <div class="trt"></div>
-              <div class="details">
-                <span class="name">Rodrygo</span>
-                <span class="team">Real Madrid</span>
-              </div>
-            </div>
-          </div>
-          <div class="goals">5</div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <div class="partida-content transition" data-date="11">
+        <div class="liga">UEFA Champions League</div>
+        <div class="partida-data">Semi-Final ° 16:00</div>
+        <div class="partida-casa">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/bayern-munich.svg"></div>
+          <h2>Bayer de Munique</h2>
+          <div class="placar-tc">2</div>
+        </div>
+        <div class="partida-visitante">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/Real_Madrid_CF.svg"></div>
+          <h2>Real Madrid</h2>
+          <div class="placar-tc">2</div>
+        </div>
+        <div class="style-line"></div>
+        <div class="partida-status">Fim</div>
+      </div>
 
-<section class="grupos container">
-  <h2 class="titulo-secundario">Grupos</h2>
-  <div class="grupo-content">
-    <div class="group-container">
-      <table class="group-table">
-        <thead>
-          <tr>
-            <th colspan="5">Grupo A </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Bayern</td>
-            <td>6</td>
-            <td>6</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Copenhagen</td>
-            <td>6</td>
-            <td>0</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Galatasaray</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Man United</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="partida-content transition" data-date="11">
+        <div class="liga">UEFA Champions League</div>
+        <div class="partida-data">Semi-Final ° 16:00</div>
+        <div class="partida-casa">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/borussia-dortmund.svg"></div>
+          <h2>B. Dortmund</h2>
+          <div class="placar-tc">1</div>
+        </div>
+        <div class="partida-visitante">
+          <div class="imagem-xd"><img class="logo-time" src="{{URL}}/resources/img/teams/uefa-champions-league/psg-paris-saint-germain.svg"></div>
+          <h2>PSG</h2>
+          <div class="placar-tc">0</div>
+        </div>
+        <div class="style-line"></div>
+        <div class="partida-status">Fim</div>
+      </div>
     </div>
+  </section>
 
-    <div class="group-container">
-      <table class="group-table">
-        <thead>
-          <tr>
-            <th colspan="5">Grupo A </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Bayern</td>
-            <td>6</td>
-            <td>6</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Copenhagen</td>
-            <td>6</td>
-            <td>0</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Galatasaray</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Man United</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <div class="group-container">
-      <table class="group-table">
-        <thead>
-          <tr>
-            <th colspan="5">Grupo A </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Bayern</td>
-            <td>6</td>
-            <td>6</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Copenhagen</td>
-            <td>6</td>
-            <td>0</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Galatasaray</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Man United</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <section class="container">
+    <h2 class="titulo-secundario">Estatísticas</h2>
+    <div class="estatisticas-content">
+      <div class="estatistica-box">
+        <h2>Gols</h2>
+        <ul class="top-scorers">
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/826643/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Mbappé</span>
+                  <span class="team">Paris</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">8</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/108579/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Kane</span>
+                  <span class="team">Bayern</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">8</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/839956/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Haaland</span>
+                  <span class="team">Man City</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">6</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/85859/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Griezmann</span>
+                  <span class="team">Atlético de Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">6</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">5</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/868812/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Vinícius Júnior</span>
+                  <span class="team">Real Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">5</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/910536/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Rodrygo</span>
+                  <span class="team">Real Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+        </ul>
+      </div>
 
-    <div class="group-container">
-      <table class="group-table">
-        <thead>
-          <tr>
-            <th colspan="5">Grupo A </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Bayern</td>
-            <td>6</td>
-            <td>6</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd"></div>
-            </td>
-            <td>Copenhagen</td>
-            <td>6</td>
-            <td>0</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Galatasaray</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="imagem-xd">
-                </div< /td>
-            <td>Man United</td>
-            <td>6</td>
-            <td>-3</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Segunda box -->
+      <div class="estatistica-box a">
+        <h2>Assistencia</h2>
+        <ul class="top-scorers">
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/991011/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Jude Bellingham</span>
+                  <span class="team">Real Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/133908/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Marcel Sabitzer</span>
+                  <span class="team">Dortmund</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/868812/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Vinícius Júnior</span>
+                  <span class="team">Real Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/85859/image" alt="jogador"></div>
+                <div class="details">
+                  <span class="name">Griezmann</span>
+                  <span class="team">Atlético de Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">5</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">4</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/845754/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Galeno</span>
+                  <span class="team">FC Porto</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">4</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">5</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/45853/image" alt=""></div>
+                <div class="details">
+                  <span class="name">İlkay Gündoğan</span>
+                  <span class="team">Barcelona</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">4</div>
+          </li>
+        </ul>
+      </div>
+      <!-- Quinta box -->
+      <div class="estatistica-box a">
+        <h2>Defesas (Goleiros)</h2>
+        <ul class="top-scorers">
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/556866/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Gregor Kobel</span>
+                  <span class="team">Dortmund</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">46 def</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">1</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/69768/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Jan Oblak</span>
+                  <span class="team">Atl Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">38 def</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/69768/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Donnarumma</span>
+                  <span class="team">PSG</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">38 def</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">3</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/857574/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Lunin</span>
+                  <span class="team">Real Madrid</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">35 def</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">5</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/592794/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Meret</span>
+                  <span class="team">Napoli</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">33 def</div>
+          </li>
+          <li class="top-scorer">
+            <div class="left">
+              <div class="position">5</div>
+              <div class="player-info">
+                <div class="trt"><img src="https://api.sofascore.app/api/v1/player/857764/image" alt=""></div>
+                <div class="details">
+                  <span class="name">Racioppi</span>
+                  <span class="team">Young Boys</span>
+                </div>
+              </div>
+            </div>
+            <div class="goals">31 def</div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="botao-estatisticas">
-      <button>&#10094</button>
-      <button>&#10095</button>
+  </section>
+  <section class="grupos container">
+    <h2 class="titulo-secundario">Grupos</h2>
+    <div class="grupo-content">
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo A </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img class="logo-time" src="https://api.sofascore.app/api/v1/team/2672/image"></div>
+              </td>
+              <td>Bayern</td>
+              <td>6</td>
+              <td>6</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/1284/image" alt=""></div>
+              </td>
+              <td>Copenhagen</td>
+              <td>6</td>
+              <td>0</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/3061/image" alt=""></div>
+              </td>
+              <td>Galatasaray</td>
+              <td>6</td>
+              <td>-3</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/35/image" alt=""></div>
+              </td>
+              <td>Man United</td>
+              <td>6</td>
+              <td>-3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo B </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/42/image" alt=""></div>
+              </td>
+              <td>Arsenal</td>
+              <td>6</td>
+              <td>12</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2952/image" alt=""></div>
+              </td>
+              <td>PSV</td>
+              <td>6</td>
+              <td>-2</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/1648/image" alt=""></div>
+              </td>
+              <td>Lens</td>
+              <td>6</td>
+              <td>-5</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2833/image" alt="">
+                </div>
+              </td>
+              <td>Sevilla</td>
+              <td>6</td>
+              <td>-5</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo C </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2829/image" alt=""></div>
+              </td>
+              <td>Real Madrid</td>
+              <td>6</td>
+              <td>9</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2714/image" alt=""></div>
+              </td>
+              <td>Napoli</td>
+              <td>6</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2999/image" alt="">
+                </div>
+              </td>
+              <td>Braga</td>
+              <td>6</td>
+              <td>-6</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2547/image" alt="">
+                </div>
+              </td>
+              <td>Union Berlin</td>
+              <td>6</td>
+              <td>-4</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo D </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2824/image" alt=""></div>
+              </td>
+              <td>Real Sociedad</td>
+              <td>6</td>
+              <td>5</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2697/image" alt=""></div>
+              </td>
+              <td>Inter</td>
+              <td>6</td>
+              <td>3</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/3006/image" alt="">
+                </div>
+              </td>
+              <td>Benfica</td>
+              <td>6</td>
+              <td>-4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2046/image" alt="">
+                </div>
+              </td>
+              <td>RB Salzburg</td>
+              <td>6</td>
+              <td>-4</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo E </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2836/image" alt=""></div>
+              </td>
+              <td>Atl. Madrid</td>
+              <td>6</td>
+              <td>11</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2699/image" alt=""></div>
+              </td>
+              <td>Lazio</td>
+              <td>6</td>
+              <td>0</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2959/image" alt="">
+                </div>
+              </td>
+              <td>Feyenoord</td>
+              <td>6</td>
+              <td>-1</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2352/image" alt="">
+                </div>
+              </td>
+              <td>Celtic</td>
+              <td>6</td>
+              <td>-10</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo F </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2673/image" alt=""></div>
+              </td>
+              <td>B. Dortmund</td>
+              <td>6</td>
+              <td>3</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/1644/image" alt=""></div>
+              </td>
+              <td>PSG</td>
+              <td>6</td>
+              <td>1</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2692/image" alt="">
+                </div>
+              </td>
+              <td>Milan</td>
+              <td>6</td>
+              <td>-3</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/39/image" alt="">
+                </div>
+              </td>
+              <td>Newcastle</td>
+              <td>6</td>
+              <td>-1</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo G </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/17/image" alt=""></div>
+              </td>
+              <td>Man City</td>
+              <td>6</td>
+              <td>11</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/36360/image" alt=""></div>
+              </td>
+              <td>Leipzig</td>
+              <td>6</td>
+              <td>3</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2445/image" alt="">
+                </div>
+              </td>
+              <td>Young Boys</td>
+              <td>6</td>
+              <td>-6</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/5149/image" alt="">
+                </div>
+              </td>
+              <td>Crvena zvezda</td>
+              <td>6</td>
+              <td>-8</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="group-container">
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th colspan="5">Grupo H </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2817/image" alt=""></div>
+              </td>
+              <td>Barcelona</td>
+              <td>6</td>
+              <td>6</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/3002/image" alt=""></div>
+              </td>
+              <td>FC Porto</td>
+              <td>6</td>
+              <td>7</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/3313/image" alt="">
+                </div>
+              </td>
+              <td>Shakhtar</td>
+              <td>6</td>
+              <td>-2</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="imagem-xd"><img src="https://api.sofascore.app/api/v1/team/2889/image" alt="">
+                </div>
+              </td>
+              <td>Royal Antwerp</td>
+              <td>6</td>
+              <td>-11</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="botao-estatisticas">
+        <button onclick="direcao(1)">&#10094</button>
+        <button onclick="direcao(2)">&#10095</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>

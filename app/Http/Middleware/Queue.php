@@ -78,12 +78,11 @@ class Queue{
     
    //middlewares  
    $middleware = array_shift($this->middlewares);
- 
+
    //Verifica o mapeamento 
     if(!isset(self::$map[$middleware])){
       throw new \Exception("Problemas ao processar o middleware da requisição", 500);
     }
-
     //NEXT
     $queue = $this;
 

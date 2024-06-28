@@ -1,0 +1,33 @@
+<div class="comentarios">
+
+  <div class="text-edit-user">
+    <h2 class="texto-form">{{title}}</h2>
+    {{status}}
+  </div>
+
+  <form class="page-form" method="post">
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" name="nome" class="form-control" value="{{nome}}" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control" value="{{email}}" required>
+    </div>
+
+    <div class="form-group">
+      <label>Nivel de acesso</label>
+      <input type="text" name="nivel_acesso" class="form-control" value="{{nivel_acesso}}" required>
+    </div>
+
+    <div class="form-group">
+      <label>Senha</label>
+      <input type="password" name="senha" class="form-control" value="{{senha}}" required>
+    </div>
+    <div class="form-group buttons-admin">
+      <button type="submit" class="btn btn-secundary">Enviar</button>
+      <a href="{{URL}}/admin/usuarios"><button type="button" class="btn btn-primary">Voltar</button><a>
+    </div>
+  </form>
+</div>

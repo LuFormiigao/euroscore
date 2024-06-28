@@ -1,0 +1,59 @@
+<div class="section-login">
+    <a class="botoes-tela-login voltar" href="#">Voltar</a>
+    <div class="container-tela-login">
+        <div class="login-content">
+            <!-- Div de Registro -->
+            <div class="login-container" id="registro">
+                <form class="page-form" action="" method="">
+                    <h2 class="texto-form">Registro</h2>
+                    <div class="form-group">
+                        <input type="text" name="usuario" placeholder="Nome de Usuario">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="senha" placeholder="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="csenha" placeholder="Confirme a senha" required>
+                    </div>
+                    <button class="botao-form" type="submit">Registrar</button>
+                </form>
+                <h2 class="h2-simples">Já possui uma conta? <a class="texto-login" onclick="mostrarLogin()">Fazer Login</a></h2>
+            </div>
+            <!-- Div de Login -->
+            <div class="login-container" id="login">
+                <form class="page-form" action="/login" method="post">
+                    <h2 class="texto-form">Login</h2>
+                    <div class="form-group">
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                    </div>
+                    <button class="botao-form" type="submit">Login</button>
+                </form>
+                <div class="alternativo-login">
+                    <h2 class="h2-simples login-separador">Esqueceu sua senha? <a class="texto-login" href="#">Redefinir Senha</a></h2>
+                    <h2 class="h2-simples">Não é usuário? <a class="texto-login" onclick="mostrarRegistro()">Criar uma conta</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="login-imagem">
+            <div class="overlay"></div>
+            <div class="imagem-content">
+                <div class="login-popup">
+                    <li>
+                        <span class="star">&#9733</span>
+                        <h5> Participe das discussões com outros torcedores deixando seus comentários nos jogos e nas notícias</h5>
+                    </li>
+                    <li>
+                        <span class="star">&#9733</span>
+                        <h5> Favorite seus jogadores e times favoritos</h5>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
